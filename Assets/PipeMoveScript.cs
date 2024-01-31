@@ -7,20 +7,21 @@ public class PipeMoveScript : MonoBehaviour
 
 
     public float moveSpeed = 5;
-    public float deleteAfter = -30;
+    public float deadZone = -30;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        Debug.Log(deadZone);
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
-        if (transform.position.x < deleteAfter)
+        if (transform.position.x < deadZone)
         {
+            Debug.Log(transform.position.x);
             Debug.Log("Pipe Deleted");
             Destroy(gameObject);
         }
