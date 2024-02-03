@@ -25,7 +25,7 @@ public class PipeSpawnScript : MonoBehaviour
         }
         else
         {
-            //spawnPipe();
+            spawnPipe();
             timer = 0;
         }
     }
