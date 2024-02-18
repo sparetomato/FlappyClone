@@ -7,3 +7,12 @@ To start learning Unity, a very simple clone of Flappy Bird, following the Game 
  ~~I had to create a new variable and use that one. Unity might be cacheing it somehow?~~
 
  When updating a script attached to a prefab - you may need to force the prefab to update.
+
+ Basic Gameplay is there
+
+ To Do:
+ * Add Gameover for falling off the bottom/top of the screen
+ * Look at particles to generate clouds
+ * Add Sound
+ * Modify gameplay
+ * Adjust flap strength
